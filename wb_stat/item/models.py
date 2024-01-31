@@ -46,9 +46,5 @@ class Item(models.Model):
         auto_now_add=True
     )
 
-    class Meta:
-        ordering = ('name',)
-        verbose_name_plural = 'Items'
-
     def __str__(self):
         return self.name
